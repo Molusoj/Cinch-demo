@@ -9,16 +9,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Cinch - 404</title>
+  <title>Cinch Add Contact</title>
 
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
 
 </head>
 
@@ -33,7 +33,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
         <div class="sidebar-brand-icon">
-          <img src="./img/cinch logo.png" class="img-fluid" alt="">
+          <img src="../img/cinch logo.png" class="img-fluid" alt="">
         </div>
         <!-- <div class="sidebar-brand-text mx-3">Cinch</div> -->
       </a>
@@ -64,8 +64,8 @@
         </a>
         <div id="collapseManageContacts" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="./pages/add-contact.html">Add Contacts</a>
-            <a class="collapse-item" href="./pages/list-contacts.html">List Contacts</a>
+            <a class="collapse-item" href="add-contact.html">Add Contacts</a>
+            <a class="collapse-item" href="list-contacts.html">List Contacts</a>
           </div>
         </div>
       </li>
@@ -79,13 +79,14 @@
         </a>
         <div id="collapseManageSms" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="./pages/add-sms.html">Add Text SMS</a>
-            <a class="collapse-item" href="./pages/add-voice-sms.html">Add Voice SMS</a>
-            <a class="collapse-item" href="./pages/ivr-message.html">Add IVR SMS</a>
-            <a class="collapse-item" href="./pages/list-sms.html">Campaigns </a>
+            <a class="collapse-item" href="./add-sms.html">Add Text SMS</a>
+            <a class="collapse-item" href="./add-voice-sms.html">Add Voice SMS</a>
+            <a class="collapse-item" href="./ivr-message.html">Add IVR SMS</a>
+            <a class="collapse-item" href="list-sms.html">Campaigns </a>
           </div>
         </div>
       </li>
+
 
 
 
@@ -99,7 +100,8 @@
 
     </ul>
     <!-- End of Sidebar -->
-    <!-- Content Wrapper -->>
+
+    <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
@@ -271,8 +273,8 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                <!-- <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60"> -->
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -304,16 +306,50 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- 404 Error Text -->
-          <div class="text-center">
-            <div class="error mx-auto" data-text="404">404</div>
-            <p class="lead text-gray-800 mb-5">Page Not Found</p>
-            <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-            <a href="/">&larr; Back to Dashboard</a>
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Add SMS</h1>
           </div>
 
+          <hr>
+
+          <!-- Content Row -->
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <form>
+                <div class="form-group">
+                  <label for="campaignTitle">Campaign Title</label>
+                  <input type="text" class="form-control" id="campaignTitle" placeholder="Campaign Title">
+                </div>
+                <div class="form-group">
+                  <label for="campaignSubject">Campaign Subject</label>
+                  <input type="text" class="form-control" id="campaignSubject" placeholder="Campaign Subject">
+                </div>
+                <div class="form-group">
+                  <label for="voiceSms">Campaign Message</label>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="voiceSms">
+                    <label class="custom-file-label" for="voiceSms">Upload Voice Recording</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Campaign Segment">Select Campaign Segment</label>
+                  <select multiple class="form-control" id="Campaign Segment">
+                    <option value="" selected="selected">- Select -</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Add SMS</button>
+              </form>
+            </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
+
 
       </div>
       <!-- End of Main Content -->
@@ -322,7 +358,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Cinch/span>
+            <span>Copyright &copy; Cinch</span>
           </div>
         </div>
       </footer>
@@ -360,14 +396,21 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src="../js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="../js/demo/chart-area-demo.js"></script>
+  <script src="../js/demo/chart-pie-demo.js"></script>
 
 </body>
 

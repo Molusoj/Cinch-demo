@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cinch</title>
+    <title>Cinch Add Contact</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,9 +19,6 @@
 
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom styles for this page -->
-    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -79,20 +76,16 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseManageSms"
                     aria-expanded="true" aria-controls="collapseManageSms">
                     <i class="fas fa-fw fa-sms"></i>
-                    <span>Channels</span>
+                    <span>Manage Sms</span>
                 </a>
                 <div id="collapseManageSms" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="./add-sms.html">Add Text SMS</a>
-                        <a class="collapse-item" href="./add-voice-sms.html">Add Voice SMS</a>
-                        <a class="collapse-item" href="./ivr-message.html">Add IVR SMS</a>
-                        <a class="collapse-item" href="list-sms.html">Campaigns </a>
+                        <a class="collapse-item" href="add-sms.html">Add Sms</a>
+                        <a class="collapse-item" href="list-sms.html">List Sms</a>
                     </div>
                 </div>
             </li>
-
-
 
 
             <!-- Divider -->
@@ -319,190 +312,20 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Manage Contacts</h1>
-
-                    <!-- Table -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Contact List </h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>S/N</th>
-                                            <th>Contact Name</th>
-                                            <th>Location</th>
-                                            <th>Phone Number</th>
-                                            <th>Contact Segment</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Kehinde group</td>
-                                            <td>Lagos</td>
-                                            <td>2348013405612 </td>
-                                            <td>Ambode Targets</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(1)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Taiye cruz</td>
-                                            <td>Abuja</td>
-                                            <td>2348124492101 </td>
-                                            <td>Ambode Targets</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(2)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Maki Ltd</td>
-                                            <td>Kaduna</td>
-                                            <td>2347018347122 </td>
-                                            <td>Ambode Targets</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(3)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Sabiyet</td>
-                                            <td>Kano</td>
-                                            <td>2349091344132 </td>
-                                            <td>Ambode Targets</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(4)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Tadd Criz</td>
-                                            <td>Ibadan</td>
-                                            <td>2348023453942 </td>
-                                            <td>Sanwoolu Targets</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(5)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Mahmood Oyewo</td>
-                                            <td>Lagos</td>
-                                            <td>2349096481551 </td>
-                                            <td>Ambode Targets</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(6)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>Judah Ndanusa</td>
-                                            <td>Lagos</td>
-                                            <td>2349021789370 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(22)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>Thorlani </td>
-                                            <td>Lagos</td>
-                                            <td>2348022663396 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(23)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>Kedishi</td>
-                                            <td>Lagos</td>
-                                            <td>2348027701109 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(24)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>Basil Umoyo</td>
-                                            <td>Lagos</td>
-                                            <td>2348093736766 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(25)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>11</td>
-                                            <td>Onakoya Afeez</td>
-                                            <td>Lagos</td>
-                                            <td>2349076167595 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(26)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>12</td>
-                                            <td>David Awili</td>
-                                            <td>Lagos</td>
-                                            <td>2349092310485 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(27)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td>Duru </td>
-                                            <td>Lagos</td>
-                                            <td>2348102362318 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(28)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>14</td>
-                                            <td>Shola</td>
-                                            <td>Lagos</td>
-                                            <td>2348187842735 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(29)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>15</td>
-                                            <td>Test Airtel</td>
-                                            <td>Lagos</td>
-                                            <td>2347012487331 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(30)"> Delete</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>16</td>
-                                            <td>Test 9mobile</td>
-                                            <td>Lagos</td>
-                                            <td>2348094195789 </td>
-                                            <td>Imaginarium</td>
-                                            <td><a class="btn btn-danger" href="javascript:void(0);" onclick="delete_contacts(31)"> Delete</a>
-                                            </td>
-                                        </tr>
-
-
-                                    </tbody>
-                                </table>
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Whatsapp Message</h1>
+                        <a href="/" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-mail-bulk fa-sm text-white-50"></i> Contact Support</a>
                     </div>
 
-                </div>
-                <!-- /.container-fluid -->
+                    <hr>
 
+                    <!-- Content Row -->
+
+
+
+
+                    
+                <!-- /.container-fluid -->
 
 
             </div>
@@ -512,7 +335,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Cinch</span>
                     </div>
                 </div>
             </footer>
